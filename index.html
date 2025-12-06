@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Microsoft Excel ショートカットキー一覧表 - 生産性向上のための包括的なキーボードショートカットリファレンス"
+    />
+    <title>Excel ショートカットキー一覧表</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ヘッダー -->
+    <header class="header">
+      <div class="header-content">
+        <div class="logo">
+          <span class="logo-icon">⌨️</span>
+          <h1>Excel ショートカットキー</h1>
+        </div>
+        <nav class="nav">
+          <a href="#efficiency-triad" class="nav-link">効率のトライアド</a>
+          <a href="#core-reference" class="nav-link">コア・リファレンス</a>
+          <a href="#advanced" class="nav-link">上級テクニック</a>
+          <a href="#f-keys" class="nav-link">Fキー</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ヒーローセクション -->
+    <section class="hero">
+      <div class="hero-content">
+        <h2 class="hero-title">
+          生産性を最大化する<br />キーボードショートカット
+        </h2>
+        <p class="hero-subtitle">
+          マウス操作からの脱却、キーボード操作への完全な移行を実現
+        </p>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number">50+</span>
+            <span class="stat-label">ショートカット</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">6</span>
+            <span class="stat-label">カテゴリ</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">3</span>
+            <span class="stat-label">マスターキー</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="keyboard-animation">
+          <div class="key key-f2">F2</div>
+          <div class="key key-f4">F4</div>
+          <div class="key key-ctrl1">Ctrl+1</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 検索・フィルターセクション -->
+    <section class="search-section">
+      <div class="search-container">
+        <input
+          type="text"
+          id="search-input"
+          class="search-input"
+          placeholder="ショートカットを検索..."
+        />
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">すべて</button>
+          <button class="filter-btn" data-filter="navigation">
+            ナビゲーション
+          </button>
+          <button class="filter-btn" data-filter="editing">編集</button>
+          <button class="filter-btn" data-filter="formatting">書式設定</button>
+          <button class="filter-btn" data-filter="structure">構造操作</button>
+          <button class="filter-btn" data-filter="fkeys">Fキー</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 効率のトライアドセクション -->
+    <section id="efficiency-triad" class="section">
+      <div class="section-header">
+        <h2 class="section-title">効率のトライアド</h2>
+        <p class="section-subtitle">習得の最優先事項となる3つのマスターキー</p>
+      </div>
+      <div class="triad-container">
+        <div class="triad-card">
+          <div class="triad-key">F2</div>
+          <h3>セル編集と数式監査</h3>
+          <p>
+            セル編集モードの開始、数式のカラーハイライト表示による視覚的なデバッグツール
+          </p>
+          <ul class="triad-features">
+            <li>セル内テキストの直接編集</li>
+            <li>数式参照セルのカラー表示</li>
+            <li>Ctrl + Enter で複数セル一括適用</li>
+          </ul>
+        </div>
+        <div class="triad-card featured">
+          <div class="triad-key">F4</div>
+          <h3>参照制御と作業反復</h3>
+          <p>相対参照から絶対参照への循環切替、直前操作の即座反復</p>
+          <ul class="triad-features">
+            <li>A1 → $A$1 → A$1 → $A1 の循環</li>
+            <li>数式エラーの予防的対策</li>
+            <li>操作の反復効率化</li>
+          </ul>
+        </div>
+        <div class="triad-card">
+          <div class="triad-key">Ctrl+1</div>
+          <h3>書式設定への最速経路</h3>
+          <p>セルの書式設定ダイアログボックスへの高速アクセス</p>
+          <ul class="triad-features">
+            <li>カスタム数値形式</li>
+            <li>複雑な罫線スタイル</li>
+            <li>セルの保護設定</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- コア・リファレンスセクション -->
+    <section id="core-reference" class="section">
+      <div class="section-header">
+        <h2 class="section-title">コア・リファレンス</h2>
+        <p class="section-subtitle">
+          生産性の高いワークフローを構築するための主要ショートカット
+        </p>
+      </div>
+
+      <!-- ナビゲーションと選択 -->
+      <div class="category-block" data-category="navigation">
+        <h3 class="category-title">
+          <span class="category-icon">🧭</span>
+          ナビゲーションと選択の高速化
+        </h3>
+        <div class="table-container">
+          <table class="shortcut-table">
+            <thead>
+              <tr>
+                <th>機能カテゴリ</th>
+                <th>ショートカット</th>
+                <th>機能</th>
+                <th>解説</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>高速移動</td>
+                <td><kbd>Ctrl</kbd> + <kbd>矢印キー</kbd></td>
+                <td>データの途切れるセルに移動</td>
+                <td>大規模データセットでの即時移動に不可欠</td>
+              </tr>
+              <tr>
+                <td>範囲選択</td>
+                <td>
+                  <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>矢印キー</kbd>
+                </td>
+                <td>データの途切れるセルまで範囲を選択</td>
+                <td>データブロック全体の高速選択</td>
+              </tr>
+              <tr>
+                <td>シート移動</td>
+                <td><kbd>Ctrl</kbd> + <kbd>PgUp</kbd> / <kbd>PgDn</kbd></td>
+                <td>左 / 右のシートへ移動</td>
+                <td>ブック内のシート間切り替えの最速手段</td>
+              </tr>
+              <tr>
+                <td>行選択</td>
+                <td><kbd>Shift</kbd> + <kbd>Space</kbd></td>
+                <td>アクティブセルを含む行全体を選択</td>
+                <td>構造操作（挿入/削除/非表示）の前処理</td>
+              </tr>
+              <tr>
+                <td>列選択</td>
+                <td><kbd>Ctrl</kbd> + <kbd>Space</kbd></td>
+                <td>アクティブセルを含む列全体を選択</td>
+                <td>構造操作（挿入/削除/非表示）の前処理</td>
+              </tr>
+              <tr>
+                <td>最終セル移動</td>
+                <td><kbd>Ctrl</kbd> + <kbd>End</kbd></td>
+                <td>データが入力されている最終セルに移動</td>
+                <td>ブックのサイズ確認</td>
+              </tr>
+              <tr>
+                <td>アクティブセル表示</td>
+                <td><kbd>Ctrl</kbd> + <kbd>BackSpace</kbd></td>
+                <td>選択範囲を維持し、画面をアクティブセルへスクロール</td>
+                <td>大規模な範囲選択後のナビゲーション</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- データ入力とセル編集 -->
+      <div class="category-block" data-category="editing">
+        <h3 class="category-title">
+          <span class="category-icon">✏️</span>
+          データ入力とセル編集の効率化
+        </h3>
+        <div class="table-container">
+          <table class="shortcut-table">
+            <thead>
+              <tr>
+                <th>機能カテゴリ</th>
+                <th>ショートカット</th>
+                <th>機能</th>
+                <th>解説</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>セル編集開始</td>
+                <td><kbd>F2</kbd></td>
+                <td>セルを編集モードにする</td>
+                <td>数式監査、セル内部分編集</td>
+              </tr>
+              <tr>
+                <td>下方向入力</td>
+                <td><kbd>Ctrl</kbd> + <kbd>D</kbd></td>
+                <td>上のセルをコピーする（フィルダウン）</td>
+                <td>選択範囲全体への一括コピー</td>
+              </tr>
+              <tr>
+                <td>右方向入力</td>
+                <td><kbd>Ctrl</kbd> + <kbd>R</kbd></td>
+                <td>左のセルをコピーする（フィルライト）</td>
+                <td>選択範囲全体への一括コピー</td>
+              </tr>
+              <tr>
+                <td>セル内改行</td>
+                <td><kbd>Alt</kbd> + <kbd>Enter</kbd></td>
+                <td>セルの中で強制的に改行する</td>
+                <td>テキストの見やすさ向上</td>
+              </tr>
+              <tr>
+                <td>静的日付入力</td>
+                <td><kbd>Ctrl</kbd> + <kbd>;</kbd></td>
+                <td>変更されない今日の日付を入力</td>
+                <td>監査証跡や非揮発性のデータ入力に利用</td>
+              </tr>
+              <tr>
+                <td>オートSUM</td>
+                <td><kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>=</kbd></td>
+                <td>SUM関数を挿入する（オートSUM）</td>
+                <td>周辺の連続した数値範囲を自動で認識</td>
+              </tr>
+              <tr>
+                <td>形式を選択して貼り付け</td>
+                <td><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>V</kbd></td>
+                <td>形式を選択して貼り付けダイアログを表示</td>
+                <td>値、書式、数式などの選択的貼り付け</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- 書式設定とスタイリング -->
+      <div class="category-block" data-category="formatting">
+        <h3 class="category-title">
+          <span class="category-icon">🎨</span>
+          書式設定とスタイリング
+        </h3>
+        <div class="table-container">
+          <table class="shortcut-table">
+            <thead>
+              <tr>
+                <th>機能カテゴリ</th>
+                <th>ショートカット</th>
+                <th>機能</th>
+                <th>解説</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>書式ダイアログ</td>
+                <td><kbd>Ctrl</kbd> + <kbd>1</kbd></td>
+                <td>セルの書式設定ダイアログボックスを表示</td>
+                <td>複雑な書式設定へのアクセス</td>
+              </tr>
+              <tr>
+                <td>取り消し線</td>
+                <td><kbd>Ctrl</kbd> + <kbd>5</kbd></td>
+                <td>選択したセルまたは文字列に取り消し線</td>
+                <td>セル内の一部文字列にも適用可能</td>
+              </tr>
+              <tr>
+                <td>罫線追加</td>
+                <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>&</kbd></td>
+                <td>選択したセルの周囲に罫線を追加</td>
+                <td>表の作成に便利</td>
+              </tr>
+              <tr>
+                <td>罫線削除</td>
+                <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>_</kbd></td>
+                <td>選択されたセルの罫線を消去</td>
+                <td>罫線のクリア</td>
+              </tr>
+              <tr>
+                <td>通貨形式</td>
+                <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>$</kbd></td>
+                <td>通貨形式を適用する</td>
+                <td>小数点以下2桁、カンマ区切り</td>
+              </tr>
+              <tr>
+                <td>パーセンテージ</td>
+                <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>%</kbd></td>
+                <td>パーセンテージ形式を適用</td>
+                <td>小数点以下なし</td>
+              </tr>
+              <tr>
+                <td>日付形式</td>
+                <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>#</kbd></td>
+                <td>標準の日付形式を適用</td>
+                <td>日付データの表示</td>
+              </tr>
+              <tr>
+                <td>数値形式</td>
+                <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>!</kbd></td>
+                <td>標準の数値形式を適用</td>
+                <td>カンマ区切り、マイナス記号</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- 構造操作とデータ管理 -->
+      <div class="category-block" data-category="structure">
+        <h3 class="category-title">
+          <span class="category-icon">🏗️</span>
+          構造操作とデータ管理
+        </h3>
+        <div class="table-container">
+          <table class="shortcut-table">
+            <thead>
+              <tr>
+                <th>機能カテゴリ</th>
+                <th>ショートカット</th>
+                <th>機能</th>
+                <th>解説</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>構造挿入</td>
+                <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>+</kbd></td>
+                <td>行、列、またはセルを挿入</td>
+                <td>選択範囲に応じて動作が変わる</td>
+              </tr>
+              <tr>
+                <td>構造削除</td>
+                <td><kbd>Ctrl</kbd> + <kbd>-</kbd></td>
+                <td>行、列、またはセルを削除</td>
+                <td>構造の削除</td>
+              </tr>
+              <tr>
+                <td>行の非表示</td>
+                <td><kbd>Ctrl</kbd> + <kbd>9</kbd></td>
+                <td>選択した行を非表示にする</td>
+                <td>不要データの一時非表示</td>
+              </tr>
+              <tr>
+                <td>行の再表示</td>
+                <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>9</kbd></td>
+                <td>選択した行を再表示する</td>
+                <td>非表示行の復元</td>
+              </tr>
+              <tr>
+                <td>列の非表示</td>
+                <td><kbd>Ctrl</kbd> + <kbd>0</kbd></td>
+                <td>選択した列を非表示にする</td>
+                <td>不要データの一時非表示</td>
+              </tr>
+              <tr>
+                <td>列の再表示</td>
+                <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>0</kbd></td>
+                <td>選択した列を再表示する</td>
+                <td>非表示列の復元</td>
+              </tr>
+              <tr>
+                <td>フィルター</td>
+                <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>L</kbd></td>
+                <td>フィルターを設定・解除する</td>
+                <td>データ分析の基礎操作</td>
+              </tr>
+              <tr>
+                <td>可視セル選択</td>
+                <td><kbd>Alt</kbd> + <kbd>;</kbd></td>
+                <td>表示されているセルのみを選択</td>
+                <td>非表示データを無視したコピーに必須</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- 上級テクニックセクション -->
+    <section id="advanced" class="section section-alt">
+      <div class="section-header">
+        <h2 class="section-title">上級テクニック</h2>
+        <p class="section-subtitle">効率化を最大化する応用操作</p>
+      </div>
+
+      <div class="advanced-grid">
+        <div class="advanced-card">
+          <div class="advanced-icon">🔄</div>
+          <h3>Endモード vs Ctrl + 矢印キー</h3>
+          <p>
+            データが疎な構造のシートでは、<kbd>End</kbd> →
+            <kbd>Enter</kbd>
+            で行の右端のデータセルへ瞬時に移動できます。空白セルを自動的にスキップします。
+          </p>
+        </div>
+        <div class="advanced-card">
+          <div class="advanced-icon">🎯</div>
+          <h3>Altアクセスキー</h3>
+          <p>
+            <kbd>Alt</kbd>
+            キーでリボン上にキーヒントが表示されます。例：罫線メニューは
+            <kbd>Alt</kbd> → <kbd>H</kbd> → <kbd>B</kbd> で開きます。
+          </p>
+        </div>
+        <div class="advanced-card">
+          <div class="advanced-icon">📊</div>
+          <h3>ピボットテーブル更新</h3>
+          <p>
+            <kbd>Alt</kbd> +
+            <kbd>F5</kbd> で選択したピボットテーブルを更新、<kbd>Ctrl</kbd> +
+            <kbd>Alt</kbd> + <kbd>F5</kbd> で全ピボットテーブルを更新します。
+          </p>
+        </div>
+        <div class="advanced-card">
+          <div class="advanced-icon">📋</div>
+          <h3>貼り付け戦略</h3>
+          <p>
+            <kbd>Ctrl</kbd> + <kbd>Alt</kbd> +
+            <kbd>V</kbd> で形式を選択して貼り付けダイアログを開き、<kbd>V</kbd>
+            で値のみ、<kbd>T</kbd> で書式のみを貼り付けます。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fキーセクション -->
+    <section id="f-keys" class="section">
+      <div class="section-header">
+        <h2 class="section-title">Fキー（ファンクションキー）</h2>
+        <p class="section-subtitle">単独操作が可能な高速ショートカット</p>
+      </div>
+
+      <div class="category-block" data-category="fkeys">
+        <div class="table-container">
+          <table class="shortcut-table">
+            <thead>
+              <tr>
+                <th>Fキー</th>
+                <th>機能概要</th>
+                <th>重要な組み合わせ</th>
+                <th>実務上の専門的応用</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><kbd>F2</kbd></td>
+                <td>セル編集開始</td>
+                <td><kbd>Shift</kbd> + <kbd>F2</kbd>: コメント挿入</td>
+                <td>数式監査、セル内部分編集</td>
+              </tr>
+              <tr>
+                <td><kbd>F4</kbd></td>
+                <td>参照切替 / 操作反復</td>
+                <td><kbd>Alt</kbd> + <kbd>F4</kbd>: Excelの終了</td>
+                <td>数式構造の安定化、作業の反復効率化</td>
+              </tr>
+              <tr>
+                <td><kbd>F5</kbd></td>
+                <td>ジャンプ</td>
+                <td>
+                  <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>F5</kbd>:
+                  全ピボットテーブル更新
+                </td>
+                <td>特定セルへの高速移動</td>
+              </tr>
+              <tr>
+                <td><kbd>F9</kbd></td>
+                <td>全体の再計算</td>
+                <td>
+                  <kbd>Shift</kbd> + <kbd>F9</kbd>: アクティブシートの再計算
+                </td>
+                <td>大規模ブックのパフォーマンス制御</td>
+              </tr>
+              <tr>
+                <td><kbd>F10</kbd></td>
+                <td>リボンアクセス有効化</td>
+                <td><kbd>Shift</kbd> + <kbd>F10</kbd>: 右クリックメニュー</td>
+                <td>マウスフリー環境でのリボン操作</td>
+              </tr>
+              <tr>
+                <td><kbd>F11</kbd></td>
+                <td>グラフシート作成</td>
+                <td><kbd>Shift</kbd> + <kbd>F11</kbd>: ワークシート挿入</td>
+                <td>データ可視化と構造追加の迅速化</td>
+              </tr>
+              <tr>
+                <td><kbd>F12</kbd></td>
+                <td>名前を付けて保存</td>
+                <td>-</td>
+                <td>ファイル管理の効率化</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="note-card">
+        <h4>💡 ノートPC利用時の注意</h4>
+        <p>
+          多くのノートPCでは、FキーがメディアコントロールにデフォルトでMapping
+          されています。Excelの機能として使用するためには、<kbd>Fn</kbd>
+          キーと同時に押す必要がある場合があります。BIOS設定でFキーをデフォルトで機能キーとして動作させることが推奨されます。
+        </p>
+      </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>Excelショートカットキー一覧表</p>
+        <p class="footer-tip">
+          💡 ヒント：「効率のトライアド」（F2, F4,
+          Ctrl+1）を徹底的に業務に組み込みましょう
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
