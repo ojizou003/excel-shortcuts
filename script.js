@@ -15,16 +15,51 @@ document.addEventListener("DOMContentLoaded", () => {
  */
 function initializeSearch() {
   const searchInput = document.getElementById("search-input");
-  if (!searchInput) return;
+  const heroSearchInput = document.getElementById("hero-search-input");
 
   let debounceTimer;
 
-  searchInput.addEventListener("input", (e) => {
+  // 検索ハンドラー関数
+  const handleSearch = (e, otherInput) => {
     clearTimeout(debounceTimer);
     debounceTimer = setTimeout(() => {
-      performSearch(e.target.value.trim().toLowerCase());
+      const query = e.target.value.trim().toLowerCase();
+      // 両方の検索バーを同期
+      if (otherInput) {
+        otherInput.value = e.target.value;
+      }
+      performSearch(query);
+
+      // ヒーロー検索バーから検索した場合、結果セクションへスクロール
+      if (e.target.id === "hero-search-input" && query) {
+        const coreReference = document.getElementById("core-reference");
+        if (coreReference) {
+          const headerOffset = 80;
+          const elementPosition = coreReference.getBoundingClientRect().top;
+          const offsetPosition =
+            elementPosition + window.pageYOffset - headerOffset;
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth",
+          });
+        }
+      }
     }, 200);
-  });
+  };
+
+  // 通常の検索バー
+  if (searchInput) {
+    searchInput.addEventListener("input", (e) =>
+      handleSearch(e, heroSearchInput)
+    );
+  }
+
+  // ヒーローセクションの検索バー
+  if (heroSearchInput) {
+    heroSearchInput.addEventListener("input", (e) =>
+      handleSearch(e, searchInput)
+    );
+  }
 }
 
 /**
@@ -275,7 +310,9 @@ function initializeScrollEffects() {
  */
 function initializeSmoothScroll() {
   const navLinks = document.querySelectorAll(".nav-link");
+  const homeLink = document.getElementById("home-link");
 
+  // ナビゲーションリンク
   navLinks.forEach((link) => {
     link.addEventListener("click", (e) => {
       e.preventDefault();
@@ -295,6 +332,34 @@ function initializeSmoothScroll() {
       }
     });
   });
+
+  // ホームリンク（ロゴ）
+  if (homeLink) {
+    homeLink.addEventListener("click", (e) => {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+      // 検索をクリア
+      const searchInput = document.getElementById("search-input");
+      const heroSearchInput = document.getElementById("hero-search-input");
+      if (searchInput) searchInput.value = "";
+      if (heroSearchInput) heroSearchInput.value = "";
+      clearHighlights();
+      showAllRows();
+      // すべてのカテゴリを表示
+      document.querySelectorAll(".category-block").forEach((block) => {
+        block.classList.remove("hidden");
+      });
+      // フィルターをリセット
+      document.querySelectorAll(".filter-btn").forEach((btn) => {
+        btn.classList.remove("active");
+      });
+      const allBtn = document.querySelector('.filter-btn[data-filter="all"]');
+      if (allBtn) allBtn.classList.add("active");
+    });
+  }
 }
 
 /**

@@ -18,10 +18,10 @@
     <!-- ヘッダー -->
     <header class="header">
       <div class="header-content">
-        <div class="logo">
+        <a href="#" class="logo" id="home-link">
           <span class="logo-icon">⌨️</span>
           <h1>Excel ショートカットキー</h1>
-        </div>
+        </a>
         <nav class="nav">
           <a href="#efficiency-triad" class="nav-link">効率のトライアド</a>
           <a href="#core-reference" class="nav-link">コア・リファレンス</a>
@@ -40,6 +40,16 @@
         <p class="hero-subtitle">
           マウス操作からの脱却、キーボード操作への完全な移行を実現
         </p>
+        <!-- ヒーロー検索バー -->
+        <div class="hero-search">
+          <input
+            type="text"
+            id="hero-search-input"
+            class="hero-search-input"
+            placeholder="🔍 ショートカットを検索...（例: コピー、Ctrl+C）"
+          />
+        </div>
+
         <div class="hero-stats">
           <div class="stat">
             <span class="stat-number">50+</span>
